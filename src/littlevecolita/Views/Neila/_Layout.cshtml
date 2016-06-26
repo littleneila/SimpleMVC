@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>@ViewData["Title"] - littlevecolita</title>
+        <title>littlevecolita</title>
 
         <environment names="Development">
             <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-            <link rel="stylesheet" href="~/css/site.css" />
+            <link rel="stylesheet" href="~/css/main.min.css" />
         </environment>
         <environment names="Staging,Production">
             <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css"
@@ -19,14 +19,7 @@
     </head>
     <body>
 
-        <div class="container body-content">
-            <h1> hello meeow meow kitty kat meow</h1>
-            @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; 2016 - littlevecolita</p>
-            </footer>
-        </div>
+        @RenderBody()
 
         <environment names="Development">
             <script src="~/lib/jquery/dist/jquery.js"></script>

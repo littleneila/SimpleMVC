@@ -1,8 +1,11 @@
 # littlevecolita
 {ASP.NET 5, MVC 6, EF 7, Gulp, Sass, Compass}
 
-1. Open CMD in admin mode
-2. Type dnvm to check if it's installed
-3. cd to the folder \src\littlevecolita
-4. Run dnx ef migrations add Initial
-5. Run dnx ef database update
+* Install VS2015 community edition
+* Tools > Extensions and Updates > Product Updates
+* Update SQL server, VS 2015 Update 2, ASP.NET Web Frameworks
+* Open CMD in admin mode
+* Type dnvm to check if it's installed
+* cd to the folder \src\littlevecolita
+* Run dnx ef migrations add Initial
+* Run dnx ef database update

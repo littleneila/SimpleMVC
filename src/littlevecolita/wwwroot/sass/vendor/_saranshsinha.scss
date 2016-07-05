@@ -26,10 +26,12 @@ $shadows-big:    multiple-box-shadow(100);
   background: transparent;
   box-shadow: $shadows-small;
   animation: animStar 500s linear infinite;
+  opacity: 0.5;
+
     &:after {
         content: " ";
         position: absolute;
-        top: 2000px;
+        top: 200px;
         width: 1px;
         height: 1px;
         background: transparent;
@@ -43,11 +45,12 @@ $shadows-big:    multiple-box-shadow(100);
   background: transparent;
   box-shadow: $shadows-medium;
   animation: animStar 1000s linear infinite;
+  opacity: 0.5;
     
   &:after {
     content: " ";
     position: absolute;
-    top: 2000px;
+    top: 200px;
     width: 2px;
     height: 2px;
     background: transparent;
@@ -61,11 +64,12 @@ $shadows-big:    multiple-box-shadow(100);
   background: transparent;
   box-shadow: $shadows-big;
   animation: animStar 15000s linear infinite;
-    
+  opacity: 0.5;
+
   &:after {
     content: " ";
     position: absolute;
-    top: 2000px;
+    top: 200px;
     width: 3px;
     height: 3px;
     background: transparent;

@@ -1,15 +1,16 @@
 ﻿"use strict";
 
-var gulp = require("gulp"),
-    rimraf = require("rimraf"),
+var cleancss = require("gulp-clean-css"),
+    compass = require("gulp-compass"),
     concat = require("gulp-concat"),
     cssmin = require("gulp-cssmin"),
-    uglify = require("gulp-uglify"),
-    compass = require("gulp-compass"),
-    cleancss = require("gulp-clean-css"),
-    path = require('path'),
-    sourcemaps = require('gulp-sourcemaps'),
-    rename = require('gulp-rename');
+    gulp = require("gulp"),
+    path = require("path"),
+    plumber = require("gulp-plumber"),
+    rename = require('gulp-rename'),
+    rimraf = require("rimraf"),
+    sourcemaps = require("gulp-sourcemaps"),
+    uglify = require("gulp-uglify");
 
 var paths = {
     webroot: "./wwwroot/"
@@ -80,6 +81,7 @@ gulp.task("min:styles", function () {
 
 gulp.task('compile:styles', function () {
     gulp.src([paths.sassPath + '/*.scss'])
+      .pipe(plumber())
       .pipe(compass({
           config_file: paths.config + '/compass-config.rb',
           css: paths.cssPath,

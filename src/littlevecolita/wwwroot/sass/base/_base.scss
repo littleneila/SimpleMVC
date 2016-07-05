@@ -2,11 +2,15 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
-/**
- * Set up a decent box model on the root element
- */
 html {
   box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  $svg-gradient-shim-threshold: 1 !global;
+  @include background-image(linear-gradient(to bottom right, #000f56, #000000));
+  font-family: $font-sans;
 }
 
 /**
@@ -17,11 +21,40 @@ html {
  */
 *, *::before, *::after {
   box-sizing: inherit;
-} 
+}
 
-/**
- * Basic styles for links
- */
+.content {
+  width: 95%;
+  margin: 0;
+  padding: 27px 0px 27px 335px;
+  
+  @include respond-to('lg') {
+    width: 95%;
+    padding: 41px 0px 41px 434px;
+  }
+  
+  @include respond-to('xxl') {
+    width: 90%;
+    padding: 55px 0px 55px 572px;
+  }
+}
+
+.sheet {
+  width: 100%;
+  min-height: 100vh;
+  position:absolute;
+  top: 300px;
+  background-color: white;
+  
+  @include respond-to('lg') {
+    top: 400px;
+  }
+  
+  @include respond-to('xxl') {
+    top: 500px;
+  }
+}
+
 a {
   color: $brand-color;
   text-decoration: none;
@@ -31,3 +64,5 @@ a {
     text-decoration: underline;
   }
 }
+
+

@@ -18,6 +18,8 @@ As the project grows, the structure of the Sass files and components will need t
 
 For the datacom.co* websites (datacom.co.nz, datacom.com.au etc.) I assisted a designer from a print company with communication with the stakeholder to complete the cross-browser and device, fully responsive, easy to use design. After implementing the new design with Sass, Gulp, and Bootstrap, I would say the more interesting parts of the website would be the megamenu (when you hover over the menu items e.g. Services, Solutions etc.) and the contacts page. You can visit this site to see some HTML/CSS structures that I have created.
 
+![Design](screenshots/yan-tsui-screenshot.png?raw=true "Design")
+
 ## Build configurations
 There are two appsettings.json files, one for the dev environment and one for staging, where I can add environment specific logging and database connections. Additionally, in launchSettings.json, I have created different profiles for server specific properties ready to be configured to suit environment specific servers. The correct appsettings.json file will be taken during startup via the Startup.cs file. 
 
